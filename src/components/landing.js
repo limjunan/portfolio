@@ -26,7 +26,7 @@ const Landing = () => {
           backgroundImage: "url('/background.jpeg')",
         }}
       >
-        <div className="text-gray-100 m-8 lg:w-2/5 text-3xl lg:text-5xl lg:ml-20 transition-all duration-500 font-semibold">
+        <div className="text-gray-100 m-8 lg:w-2/5 text-4xl lg:text-5xl lg:ml-20 transition-all duration-500 font-semibold">
           Hi, I'm Bryan Lim. <br />A software engineer.
         </div>
         <img
