@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const About = () => {
+  const ref = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0");
+          entry.target.classList.add("opacity-100");
+        } else {
+          entry.target.classList.remove("opacity-100");
+          entry.target.classList.add("opacity-0");
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
   return (
-    <div className="mb-20 mx-8 lg:mx-40 font-semibold flex flex-col bg-cod-gray p-20">
+    <div className="mb-20 mx-8 lg:mx-40 font-semibold flex flex-col bg-cod-gray py-20 px-12 sm:px-20">
       <div className="mb-2 flex space-x-4 text-gray-400 text-3xl">
         <p>Who am I?</p>
       </div>
@@ -11,13 +41,16 @@ const About = () => {
         About the developer behind the screen.
       </span>
       <div className="flex items-center justify-center text-gray-400 text-xl pt-8">
-        <div>
-          <p>
-            I am a student software engineer based in Singapore and have a
-            passion for building applications and solving problems.{` `}
-            <span className="text-white">I develop with the user in mind.</span>
-          </p>
-        </div>
+        <p>
+          I am a student software engineer based in Singapore and I have a
+          passion for building applications and solving problems.{` `}
+          <span
+            ref={ref}
+            className="text-white opacity-0 transition-opacity duration-1000"
+          >
+            I develop with the user in mind.
+          </span>{" "}
+        </p>
       </div>
     </div>
   );
