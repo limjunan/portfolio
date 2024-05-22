@@ -16,8 +16,6 @@ const Landing = () => {
     };
   }, []);
 
-  const letterSpacing = Math.max(0.02 - scrollPosition / 5000, 0);
-  const lineHeight = Math.max(1.5 - scrollPosition / 1000, 1);
   const opacity = Math.max(1 - scrollPosition / 500, 0);
 
   return (
@@ -28,13 +26,7 @@ const Landing = () => {
           backgroundImage: "url('/background.jpeg')",
         }}
       >
-        <div
-          className="text-gray-100 m-8 lg:w-2/5 text-3xl lg:text-5xl lg:ml-20 transition-all duration-500 font-semibold"
-          style={{
-            letterSpacing: `${letterSpacing}em`,
-            lineHeight: lineHeight,
-          }}
-        >
+        <div className="text-gray-100 m-8 lg:w-2/5 text-3xl lg:text-5xl lg:ml-20 transition-all duration-500 font-semibold">
           Hi, I'm Bryan Lim. <br />A software engineer.
         </div>
         <img

@@ -1,6 +1,5 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";

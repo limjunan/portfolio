@@ -3,6 +3,7 @@ import Landing from "./components/landing";
 import Showcase from "./components/showcase";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import About from "./components/about";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div>
         <Landing />
         <Showcase />
+        <About />
         <Contact />
       </div>
       <Footer />
