@@ -1,13 +1,14 @@
 import "./App.css";
 import Landing from "./components/landing";
+import Showcase from "./components/showcase";
+import Contact from "./components/contact";
 
 function App() {
   return (
-    <div>
+    <div className="bg-black">
       <Landing />
-      <div className="min-h-screen flex justify-center items-center bg-black text-white">
-        I build applications.
-      </div>
+      <Showcase />
+      <Contact />
     </div>
   );
 }

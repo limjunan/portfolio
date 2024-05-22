@@ -29,7 +29,7 @@ const Landing = () => {
         }}
       >
         <div
-          className="text-white m-4 lg:w-2/5 text-4xl lg:text-5xl lg:ml-20 transition-all duration-500"
+          className="text-gray-100 m-8 lg:w-2/5 text-3xl lg:text-5xl lg:ml-20 transition-all duration-500 font-semibold"
           style={{
             letterSpacing: `${letterSpacing}em`,
             lineHeight: lineHeight,
