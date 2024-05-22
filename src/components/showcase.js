@@ -12,6 +12,11 @@ import Tag from "./ui/tag";
 import { IoLogoJavascript } from "react-icons/io";
 import { DiHeroku } from "react-icons/di";
 import { FaTelegramPlane } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiTypescript } from "react-icons/si";
+import { RiOpenaiFill } from "react-icons/ri";
+import { DiPostgresql } from "react-icons/di";
+import { FaStripeS } from "react-icons/fa";
 
 const Showcase = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -48,12 +53,6 @@ const Showcase = () => {
                 <div className="p-1">
                   <Card className="">
                     <img src="dobby-mockup-portrait.png" alt="Mockup" />
-                    {/* <CardHeader className="p-6">Whisper Well</CardHeader>
-                    <CardContent className="flex aspect-square items-center justify-center p-6">
-                      <span className="text-4xl font-semibold">
-                        {index + 1}
-                      </span>
-                    </CardContent> */}
                   </Card>
                 </div>
               </CarouselItem>
@@ -77,9 +76,48 @@ const Showcase = () => {
           <div className="flex flex-wrap justify-start">
             <Tag icon={<IoLogoJavascript />} tagName="Node.js" />
             <Tag icon={<DiHeroku />} tagName="Heroku" />
+            <Tag icon={<DiPostgresql />} tagName="PostgreSQL" />
             <Tag icon={<FaTelegramPlane />} tagName="Telegram API" />
           </div>
         </div>
+      </div>
+      <div className="flex flex-col xl:flex-row items-center justify-start my-16 space-y-8 xl:space-x-8 text-gray-300">
+        <div className="flex-col items-center justify-center space-y-8 mx-8">
+          <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
+            FRCSviva.com
+          </h1>
+          <p className="text-gray-300 font-medium text-l text-justify">
+            FRCSviva.com is a web application that helps students prepare for
+            the FRCS surgery examination. The application provides students with
+            a platform to practice for the exam by taking mock tests. The
+            application also provides students with feedback on their
+            performance through the OpenAi API, helping them identify areas for
+            improvement. It comes complete with an authentication system, and a
+            subscription model powered by the Stripe API.
+          </p>
+          <div className="flex flex-wrap justify-start">
+            <Tag icon={<RiNextjsFill />} tagName="Next.js" />
+            <Tag icon={<SiTypescript />} tagName="Typescript" />
+            <Tag icon={<DiPostgresql />} tagName="PostgreSQL" />
+            <Tag icon={<RiOpenaiFill />} tagName="OpenAi API" />
+            <Tag icon={<FaStripeS />} tagName="Stripe API" />
+          </div>
+        </div>
+        <Carousel className="max-w-md sm:max-w-2xl dark mx-16">
+          <CarouselContent>
+            {Array.from({ length: 3 }, (_, i) => i + 1).map((index) => (
+              <CarouselItem key={index}>
+                <div className="p-1">
+                  <Card className="">
+                    <img src={`frcsviva_${index}.png`} alt="Mockup" />
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </div>
   );
