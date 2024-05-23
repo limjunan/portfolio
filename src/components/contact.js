@@ -18,7 +18,7 @@ const Contact = () => {
         Impressed? Get in touch.
       </span>
       <div className="flex items-center justify-center flex-grow">
-        <div className="border-gray-500 rounded-md border p-4 px-16 space-x-8 flex">
+        <div className="border-gray-500 rounded-md border p-4 px-8 space-x-8 flex">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>

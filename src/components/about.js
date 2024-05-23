@@ -32,7 +32,7 @@ const About = () => {
     };
   }, []);
   return (
-    <div className="mb-20 mx-8 lg:mx-40 font-semibold flex flex-col bg-cod-gray py-20 px-12 sm:px-20">
+    <div className="mb-16 mx-8 lg:mx-40 font-semibold flex flex-col bg-cod-gray py-20 px-12 sm:px-20">
       <div className="mb-2 flex space-x-4 text-gray-400 text-3xl">
         <p>Who am I?</p>
       </div>
