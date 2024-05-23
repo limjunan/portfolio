@@ -175,7 +175,7 @@ const Showcase = () => {
             />
           </div>
         </div>
-        <Carousel className="max-w-md sm:max-w-2xl dark mx-16">
+        <Carousel className="max-w-md sm:max-w-2xl dark mx-8">
           <CarouselContent>
             {Array.from({ length: 3 }, (_, i) => i + 1).map((index) => (
               <CarouselItem key={index}>
