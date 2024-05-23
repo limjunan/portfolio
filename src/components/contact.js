@@ -24,7 +24,7 @@ const Contact = () => {
               <TooltipTrigger>
                 <span>
                   <a
-                    href="mailto:your-email@gmail.com"
+                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=bryanlim0803020@gmail.com&tf=1"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

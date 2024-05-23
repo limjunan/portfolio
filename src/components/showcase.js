@@ -111,15 +111,15 @@ const Showcase = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col xl:flex-row items-center justify-start my-16 space-y-8 xl:space-x-16 text-gray-300">
+      <div className="flex flex-col xl:flex-row items-center justify-start my-16 space-y-8 md:space-x-24 text-gray-300">
         <div className="flex-col items-center justify-center space-y-8">
           <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
             FRCSviva.com
           </h1>
           <p className="text-gray-300 font-medium text-l text-justify min-w-60">
             FRCSviva.com is a web application that helps students prepare for
-            the FRCS surgery examination. The application provides students with
-            a platform to practice for the exam by taking mock tests. The
+            the FRCS surgery viva examination. The application presents students
+            with a platform to practice for the exam by taking mock tests. The
             application also provides students with feedback on their
             performance through the OpenAi API, helping them identify areas for
             improvement. It comes complete with an authentication system, and a
@@ -163,7 +163,7 @@ const Showcase = () => {
               icon={<RiOpenaiFill />}
               tagName="OpenAi API"
               popover={
-                "OpenAi's chat completions API was used to generate feedback for the user based on their answer. This feedback is then streamed to the user."
+                "OpenAi's chat completions API was used to generate feedback for the user based on their answer. This feedback is then streamed to the user through an API endpoint."
               }
             />
             <Tag
@@ -175,7 +175,7 @@ const Showcase = () => {
             />
           </div>
         </div>
-        <Carousel className="max-w-md sm:max-w-2xl dark mx-8">
+        <Carousel className="max-w-md sm:max-w-xl dark mx-8">
           <CarouselContent>
             {Array.from({ length: 3 }, (_, i) => i + 1).map((index) => (
               <CarouselItem key={index}>
