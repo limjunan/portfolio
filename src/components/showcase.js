@@ -111,12 +111,12 @@ const Showcase = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col xl:flex-row items-center justify-start my-16 space-y-8 xl:space-x-8 text-gray-300">
+      <div className="flex flex-col xl:flex-row items-center justify-start my-16 space-y-8 xl:space-x-16 text-gray-300">
         <div className="flex-col items-center justify-center space-y-8 mx-8">
           <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
             FRCSviva.com
           </h1>
-          <p className="text-gray-300 font-medium text-l text-justify">
+          <p className="text-gray-300 font-medium text-l text-justify min-w-80">
             FRCSviva.com is a web application that helps students prepare for
             the FRCS surgery examination. The application provides students with
             a platform to practice for the exam by taking mock tests. The

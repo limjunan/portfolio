@@ -13,28 +13,52 @@ const Contact = () => {
       <div className="flex items-center justify-center flex-grow">
         <div className="border-gray-500 rounded-md border p-4 px-16 space-x-8 flex">
           <span>
-            <SiGmail
-              size={32}
-              className="hover:cursor-pointer hover:text-white"
-            />
+            <a
+              href="mailto:your-email@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiGmail
+                size={32}
+                className="hover:cursor-pointer hover:text-white"
+              />
+            </a>
           </span>
           <span>
-            <FaLinkedin
-              size={32}
-              className="hover:cursor-pointer hover:text-white"
-            />
+            <a
+              href="https://www.linkedin.com/in/lim-jun-an-bryan-068bba185/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin
+                size={32}
+                className="hover:cursor-pointer hover:text-white"
+              />
+            </a>
           </span>
           <span>
-            <FaGithub
-              size={32}
-              className="hover:cursor-pointer hover:text-white"
-            />
+            <a
+              href="https://github.com/limjunan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub
+                size={32}
+                className="hover:cursor-pointer hover:text-white"
+              />
+            </a>
           </span>
           <span>
-            <FaTelegramPlane
-              size={32}
-              className="hover:cursor-pointer hover:text-white"
-            />
+            <a
+              href="https://t.me/salmonroee"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTelegramPlane
+                size={32}
+                className="hover:cursor-pointer hover:text-white"
+              />
+            </a>
           </span>
         </div>
       </div>
