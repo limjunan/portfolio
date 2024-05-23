@@ -48,7 +48,7 @@ const Showcase = () => {
           Take a closer look.
         </span>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-start my-16 md:space-x-8 text-gray-300">
+      <div className="flex flex-col md:flex-row items-center justify-start my-16 space-y-8 md:space-x-8 text-gray-300">
         <Carousel className="max-w-xs dark mx-16">
           <CarouselContent>
             {Array.from({ length: 2 }, (_, i) => i + 1).map((index) => (
@@ -64,7 +64,7 @@ const Showcase = () => {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
-        <div className="flex-col items-center justify-center space-y-8 mx-8">
+        <div className="flex-col items-center justify-center space-y-8">
           <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
             Alpha's Dobby 2.0
           </h1>
