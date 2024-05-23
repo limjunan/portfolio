@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col h-[10vh text-gray-300 flex items-center text-sm justify-center border-t border-gray-500 p-8 mx-8 mt-8">
+    <div className="flex flex-col h-[10vh text-gray-300 flex items-center text-center text-sm justify-center border-t border-gray-500 p-8 mx-8 mt-8">
       <p>© 2024 Bryan Lim. All rights reserved.</p>
       <p>
         If you couldn't tell already, design inspired by{" "}
