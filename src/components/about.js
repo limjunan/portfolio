@@ -45,9 +45,9 @@ const About = () => {
           I am a student software engineer based in{" "}
           <span className="text-white">Singapore</span> and I have a passion for
           building applications and solving problems. I have had the privilege
-          of working as a freelancer, in a start-up, and in a huge corporation.
-          This diverse experience has equipped me with the skills needed in
-          software engineering. <br />
+          of working as a freelancer, in a start-up, and in big tech. This
+          diverse experience has equipped me with the skills needed in software
+          engineering. <br />
           <br />
           <span
             ref={ref}
