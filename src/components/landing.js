@@ -30,9 +30,9 @@ const Landing = () => {
           Hi, I'm Bryan Lim. <br />A software engineer.
         </div>
         <img
-          src="moon.png"
+          src="moon-smooth.png"
           alt="Moon"
-          className="w-1/2 h-1/2 object-contain object-center"
+          className="w-2/3 h-2/3 md:w-1/2 md:h-1/2 object-contain object-center"
           style={{ opacity: opacity }}
         />
       </div>

@@ -51,11 +51,11 @@ const Showcase = () => {
       <div className="flex flex-col md:flex-row items-center justify-start my-16 md:space-x-8 text-gray-300">
         <Carousel className="max-w-xs dark mx-16">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 2 }, (_, i) => i + 1).map((index) => (
               <CarouselItem key={index}>
                 <div className="p-1">
                   <Card className="">
-                    <img src="dobby-mockup-portrait.png" alt="Mockup" />
+                    <img src={`dobby_${index}.png`} alt="Mockup" />
                   </Card>
                 </div>
               </CarouselItem>
