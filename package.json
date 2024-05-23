@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://limjunan.github.io/portfolio",
+  "homepage": "https://limjunan.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@radix-ui/react-hover-card": "^1.0.7",
