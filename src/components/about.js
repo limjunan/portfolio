@@ -42,8 +42,13 @@ const About = () => {
       </span>
       <div className="flex items-center justify-center text-gray-400 text-xl pt-8">
         <p>
-          I am a student software engineer based in Singapore and I have a
-          passion for building applications and solving problems.{` `}
+          I am a student software engineer based in{" "}
+          <span className="text-white">Singapore</span> and I have a passion for
+          building applications and solving problems. I have had the privilege
+          of working as a freelancer, in a start-up, and in a huge corporation.
+          This diverse experience has equipped me with the skills needed in
+          software engineering. <br />
+          <br />
           <span
             ref={ref}
             className="text-white opacity-0 transition-opacity duration-1000"
