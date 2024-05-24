@@ -23,14 +23,14 @@ const Landing = () => {
       <div
         className="min-h-[80vh] md:min-h-screen bg-cover bg-center flex flex-col lg:flex-row justify-center items-center lg:justify-start"
         style={{
-          backgroundImage: "url('background.jpeg')",
+          backgroundImage: "url('/portfolio/background.jpeg')",
         }}
       >
         <div className="text-gray-100 m-8 lg:w-2/5 text-4xl lg:text-5xl lg:ml-20 transition-all duration-500 font-semibold">
           Hi, I'm Bryan Lim. <br />A software engineer.
         </div>
         <img
-          src="moon-smooth.png"
+          src="/portfolio/moon-smooth.png"
           alt="Moon"
           className="w-2/3 h-2/3 md:w-1/2 md:h-1/2 object-contain object-center"
           style={{ opacity: opacity }}

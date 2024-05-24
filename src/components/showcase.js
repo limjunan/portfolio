@@ -55,7 +55,7 @@ const Showcase = () => {
               <CarouselItem key={index}>
                 <div className="p-1">
                   <Card className="">
-                    <img src={`dobby_${index}.png`} alt="Mockup" />
+                    <img src={`/portfolio/dobby_${index}.png`} alt="Mockup" />
                   </Card>
                 </div>
               </CarouselItem>
@@ -181,7 +181,10 @@ const Showcase = () => {
               <CarouselItem key={index}>
                 <div className="p-1">
                   <Card className="">
-                    <img src={`frcsviva_${index}.png`} alt="Mockup" />
+                    <img
+                      src={`/portfolio/frcsviva_${index}.png`}
+                      alt="Mockup"
+                    />
                   </Card>
                 </div>
               </CarouselItem>
