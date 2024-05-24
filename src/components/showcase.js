@@ -117,13 +117,13 @@ const Showcase = () => {
       <div className="flex flex-col xl:flex-row items-center justify-start my-16 space-y-8 md:space-x-24 text-gray-300">
         <div className="flex-col items-center justify-center space-y-8">
           <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-            FRCS Exam Preparation App
+            FRCS Exam Preparation Platform
           </h1>
           <p className="text-gray-300 font-medium text-l text-justify min-w-60">
-            The FRCS Exam Mastery Platform is a comprehensive, full-stack web
-            application designed to assist students in their preparation for the
-            Fellowship of the Royal College of Surgeons (FRCS) examination. This
-            innovative platform offers a unique opportunity for students to
+            The FRCS Exam Preparation Platform is a comprehensive, full-stack
+            web application designed to assist students in their preparation for
+            the Fellowship of the Royal College of Surgeons (FRCS) examination.
+            This innovative platform offers a unique opportunity for students to
             engage in mock tests, crafted based on real-world scenarios and
             model answers provided by industry professionals. Leveraging the
             power of the OpenAi API, the platform delivers insightful feedback
