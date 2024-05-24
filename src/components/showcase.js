@@ -120,14 +120,17 @@ const Showcase = () => {
             FRCS Exam Preparation App
           </h1>
           <p className="text-gray-300 font-medium text-l text-justify min-w-60">
-            The FRCS Exam Preparation App is a full-stack web application that
-            helps students prepare for the examination in Fellowship of the
-            Royal College of Surgeons (FRCS) examination. The application
-            presents students with a platform to practice for the exam by taking
-            mock tests. The application also provides students with feedback on
-            their performance through the OpenAi API, helping them identify
-            areas for improvement. It comes complete with an authentication
-            system, and a subscription model powered by the Stripe API.
+            The FRCS Exam Mastery Platform is a comprehensive, full-stack web
+            application designed to assist students in their preparation for the
+            Fellowship of the Royal College of Surgeons (FRCS) examination. This
+            innovative platform offers a unique opportunity for students to
+            engage in mock tests, crafted based on real-world scenarios and
+            model answers provided by industry professionals. Leveraging the
+            power of the OpenAi API, the platform delivers insightful feedback
+            on students' performance, enabling them to pinpoint and focus on
+            areas needing improvement. The platform includes a robust
+            authentication system and features a subscription model, integrated
+            with the Stripe API.
           </p>
           <div className="flex flex-wrap justify-start">
             <Tag
