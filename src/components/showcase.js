@@ -69,12 +69,15 @@ const Showcase = () => {
             Alpha's Dobby 2.0
           </h1>
           <p className="text-gray-300 font-medium text-l text-justify">
-            Dobby 2.0 is a Telegram Bot built to streamline company processes.
-            Before Dobby, the company had to manually update the database with
-            new information. This was time-consuming and prone to errors. Dobby
-            2.0 automates this process, saving the company time and reducing
-            errors. Moreover, Dobby 2.0 also introduces additional features,
-            such as leaves management.
+            Dobby 2.0 is a Telegram Bot designed to automate and streamline
+            company processes. Prior to the implementation of Dobby, the company
+            relied on manual database updates, a process that was not only
+            time-consuming but also susceptible to errors. Dobby 2.0's primary
+            function is to automatically update the database whenever personnel
+            check in or out, significantly reducing the time spent on these
+            tasks and minimizing the potential for errors. In addition to this,
+            Dobby 2.0 introduces new features, including an efficient leaves
+            management system.
           </p>
           <div className="flex flex-wrap justify-start">
             <Tag
@@ -114,16 +117,17 @@ const Showcase = () => {
       <div className="flex flex-col xl:flex-row items-center justify-start my-16 space-y-8 md:space-x-24 text-gray-300">
         <div className="flex-col items-center justify-center space-y-8">
           <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-            FRCSviva.com
+            FRCS Exam Preparation App
           </h1>
           <p className="text-gray-300 font-medium text-l text-justify min-w-60">
-            FRCSviva.com is a web application that helps students prepare for
-            the FRCS surgery viva examination. The application presents students
-            with a platform to practice for the exam by taking mock tests. The
-            application also provides students with feedback on their
-            performance through the OpenAi API, helping them identify areas for
-            improvement. It comes complete with an authentication system, and a
-            subscription model powered by the Stripe API.
+            The FRCS Exam Preparation App is a full-stack web application that
+            helps students prepare for the examination in Fellowship of the
+            Royal College of Surgeons (FRCS) examination. The application
+            presents students with a platform to practice for the exam by taking
+            mock tests. The application also provides students with feedback on
+            their performance through the OpenAi API, helping them identify
+            areas for improvement. It comes complete with an authentication
+            system, and a subscription model powered by the Stripe API.
           </p>
           <div className="flex flex-wrap justify-start">
             <Tag
@@ -181,10 +185,7 @@ const Showcase = () => {
               <CarouselItem key={index}>
                 <div className="p-1">
                   <Card className="">
-                    <img
-                      src={`/portfolio/frcsviva_${index}.png`}
-                      alt="Mockup"
-                    />
+                    <img src={`/portfolio/frcs_${index}.png`} alt="Mockup" />
                   </Card>
                 </div>
               </CarouselItem>
