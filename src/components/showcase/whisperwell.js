@@ -51,29 +51,33 @@ const Whisperwell = () => {
       </div>
       <div className="flex-col items-center md:w-3/4">
         <div className="space-y-8">
-          <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-            Whisper Well
-          </h1>
-          <p className="text-gray-300 font-medium text-l text-justify">
-            Whisper Well is a specialised Telegram Bot (
-            <a
-              href="https://t.me/Whisperwell_bot"
-              className="underline"
-              target="_blank"
-              rel="noreferrer"
-            >
-              @Whisperwell_bot
-            </a>
-            ) built to equip youths with an easier way to reach out for peer
-            support. The bot matches users with volunteers who are trained to
-            provide emotional support, enabling them to chat in real time. It
-            offers features such as the ability for users to specify their
-            preferred volunteer gender, maintain anonymity through a pseudonym,
-            and set taboo topics to guide the conversation. Whisper Well also
-            incorporates role separation among users, volunteers, and admins,
-            facilitating efficient platform management. Admin functions include
-            banning, volunteer management, and reassigning of users.
-          </p>
+          <div className="space-y-4">
+            <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
+              Whisper Well
+            </h1>
+            <p className="text-gray-300 font-medium text-l text-justify">
+              Whisper Well is a specialised Telegram Bot (
+              <a
+                href="https://t.me/Whisperwell_bot"
+                className="underline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @Whisperwell_bot
+              </a>
+              ) built to equip youths with an easier way to reach out for peer
+              support. <br /> <br />
+              The bot matches users with volunteers who are trained to provide
+              emotional support, enabling them to chat in real time. It offers
+              features such as the ability for users to specify their preferred
+              volunteer gender, maintain anonymity through a pseudonym, and set
+              taboo topics to guide the conversation. <br /> <br />
+              Whisper Well also incorporates role separation among users,
+              volunteers, and admins, facilitating efficient platform
+              management. Admin functions include banning, volunteer management,
+              and reassigning of users.
+            </p>
+          </div>
           <div className="flex flex-wrap justify-start">
             <Tag
               icon={<IoLogoJavascript />}

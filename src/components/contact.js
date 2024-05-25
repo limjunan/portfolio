@@ -13,7 +13,7 @@ import { GoLinkExternal } from "react-icons/go";
 
 const Contact = () => {
   return (
-    <div className="my-16 sm:my-32 lg:mx-20 text-gray-300 flex flex-col space-y-10 justify-center items-center">
+    <div className="my-16 sm:my-32 mx-8 lg:mx-20 text-gray-300 flex flex-col space-y-10 justify-center items-center">
       <span className="font-semibold text-3xl lg:text-4xl text-center">
         Impressed? Get in touch.
       </span>

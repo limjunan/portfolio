@@ -25,22 +25,27 @@ const Frcs = () => {
     <div className="flex flex-col-reverse md:flex-row justify-center items-center mx-4 mb-16 space-y-reverse space-y-8 md:space-x-16 text-gray-300">
       <div className="flex-col items-center md:w-1/2">
         <div className="space-y-8">
-          <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-            FRCS Exam Preparation Platform
-          </h1>
-          <p className="text-gray-300 font-medium text-l text-justify">
-            The FRCS Exam Preparation Platform is a comprehensive, full-stack
-            web application designed to assist students in their preparation for
-            the Fellowship of the Royal College of Surgeons (FRCS) examination.
-            This platform offers a unique opportunity for students to engage in
-            mock tests, crafted based on real-world scenarios and model answers
-            provided by industry professionals. Leveraging the OpenAi API, the
-            platform delivers feedback on students' performance, enabling them
-            to pinpoint on areas needing improvement. The platform includes an
-            authentication system and features a subscription model, integrated
-            with the Stripe API. It also comes complete with an admin dashboard,
-            allowing for the management of users and tests.
-          </p>
+          <div className="space-y-4">
+            <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
+              FRCS Exam Preparation Platform
+            </h1>
+            <p className="text-gray-300 font-medium text-l text-justify">
+              The FRCS Exam Preparation Platform is a comprehensive, full-stack
+              web application designed to assist students in their preparation
+              for the Fellowship of the Royal College of Surgeons (FRCS)
+              examination. <br />
+              <br />
+              This platform offers a unique opportunity for students to engage
+              in mock tests, crafted based on real-world scenarios and model
+              answers provided by industry professionals. Leveraging the OpenAi
+              API, the platform delivers feedback on students' performance,
+              enabling them to pinpoint on areas needing improvement. <br />
+              <br /> The platform includes an authentication system and features
+              a subscription model, integrated with the Stripe API. It also
+              comes complete with an admin dashboard, allowing for the
+              management of users and tests.
+            </p>
+          </div>
           <div className="flex flex-wrap justify-start">
             <Tag
               icon={<SiTypescript />}

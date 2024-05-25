@@ -24,20 +24,22 @@ const Dobby = () => {
     <div className="flex flex-col-reverse md:flex-row justify-center items-center mx-4 mb-16 space-y-reverse space-y-8 md:space-x-16 text-gray-300">
       <div className="flex-col items-center md:w-3/4">
         <div className="space-y-8">
-          <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-            Alpha's Dobby 2.0
-          </h1>
-          <p className="text-gray-300 font-medium text-l text-justify">
-            Dobby 2.0 is a Telegram Bot designed to automate and streamline
-            company processes. Prior to the implementation of Dobby, the company
-            relied on manual database updates, a process that was not only
-            time-consuming but also susceptible to errors. Dobby 2.0's primary
-            function is to automatically update the database whenever personnel
-            check in or out, significantly reducing the time spent on these
-            tasks and minimizing the potential for errors. In addition to this,
-            Dobby 2.0 introduces features such as an efficient leaves management
-            system.
-          </p>
+          <div className="space-y-4">
+            <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
+              Alpha's Dobby 2.0
+            </h1>
+            <p className="text-gray-300 font-medium text-l text-justify">
+              Dobby 2.0 is a Telegram Bot designed to automate and streamline
+              company processes. Prior to the implementation of Dobby, the
+              company relied on manual database updates, a process that was not
+              only time-consuming but also susceptible to errors. <br /> <br />
+              Dobby 2.0's primary function is to automatically update the
+              database whenever personnel check in or out, significantly
+              reducing the time spent on these tasks and minimizing the
+              potential for errors. In addition to this, Dobby 2.0 introduces
+              features such as an efficient leaves management system.
+            </p>
+          </div>
           <div className="flex flex-wrap justify-start">
             <Tag
               icon={<IoLogoJavascript />}

@@ -53,26 +53,29 @@ const Portfolio = () => {
       </div>
       <div className="flex-col items-center md:w-1/2">
         <div className="space-y-8">
-          <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-            Portfolio React App
-          </h1>
-          <p className="text-gray-300 font-medium text-l text-justify">
-            This portfolio website is a digital platform that showcases my
-            skills, projects, and about myself as a developer. Designed with a
-            focus on user experience, it ensures fast load speeds through
-            efficient techniques such as{" "}
-            <a
-              href="https://www.cloudflare.com/en-gb/learning/performance/what-is-lazy-loading/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              lazy loading
-            </a>
-            . The design was inspired by Apple's clean and intuitive layout. The
-            website was built with a mobile-first approach, ensuring full
-            responsiveness and optimal viewing across all devices.
-          </p>
+          <div className="space-y-4">
+            <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
+              Portfolio React App
+            </h1>
+            <p className="text-gray-300 font-medium text-l text-justify">
+              This portfolio website is a digital platform that showcases my
+              skills, projects, and about myself as a developer. Designed with a
+              focus on user experience, it ensures fast load speeds through
+              efficient techniques such as{" "}
+              <a
+                href="https://www.cloudflare.com/en-gb/learning/performance/what-is-lazy-loading/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                lazy loading
+              </a>
+              . <br /> <br />
+              The design was inspired by Apple's clean and intuitive layout. The
+              website was built with a mobile-first approach, ensuring full
+              responsiveness and optimal viewing across all devices.
+            </p>
+          </div>
           <div className="flex flex-wrap justify-start">
             <Tag
               icon={<IoLogoJavascript />}
@@ -92,17 +95,17 @@ const Portfolio = () => {
               popover={"Github Pages was used to host the application."}
             />
             <Tag
-              icon={<SiTailwindcss />}
-              tagName="Tailwind CSS"
-              popover={
-                "Tailwind CSS was used for styling the application due to its utility-first approach. This leads to less CSS bloat and a more maintainable codebase."
-              }
-            />
-            <Tag
               icon={<FaFigma />}
               tagName="Figma"
               popover={
                 "Figma was used to design the UI and the individual components of the application."
+              }
+            />
+            <Tag
+              icon={<SiTailwindcss />}
+              tagName="Tailwind CSS"
+              popover={
+                "Tailwind CSS was used for styling the application due to its utility-first approach. This leads to less CSS bloat and a more maintainable codebase."
               }
             />
             <Tag
