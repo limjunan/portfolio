@@ -32,7 +32,7 @@ const Landing = () => {
           Hi, I'm Bryan Lim. <br />A software engineer.
         </div>
         {!imageLoaded && (
-          <Skeleton className="h-[400px] w-[400px] lg:h-[600px] lg:w-[600px] rounded-full dark" />
+          <Skeleton className="h-[300px] w-[300px] lg:h-[600px] lg:w-[600px] rounded-full dark" />
         )}
         <img
           src="/portfolio/moon-smooth.png"

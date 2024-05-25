@@ -15,7 +15,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "top-light":
-          "radial-gradient(ellipse 40% 40% at 50% 0, rgba(31, 41, 55, 0.6), transparent)",
+          "radial-gradient(ellipse 40% 50% at 50% 0, rgba(107, 114, 128, 0.6), transparent)",
         "light-effect":
           "radial-gradient(ellipse 40% 40% at 70% 80%, rgba(31, 41, 55, 0.6), transparent)",
       },
