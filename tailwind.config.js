@@ -13,6 +13,12 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "top-light":
+          "radial-gradient(ellipse 40% 40% at 50% 0, rgba(31, 41, 55, 0.6), transparent)",
+        "light-effect":
+          "radial-gradient(ellipse 40% 40% at 70% 80%, rgba(31, 41, 55, 0.6), transparent)",
+      },
       colors: {
         "cod-gray": "#0f0f0f",
 

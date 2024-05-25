@@ -1,28 +1,13 @@
 import React, { useEffect, useState } from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
-
-import { Card } from "./ui/card";
-import Tag from "./ui/tag";
-import { IoLogoJavascript } from "react-icons/io5";
-import { DiHeroku } from "react-icons/di";
-import { FaTelegramPlane } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
-import { RiOpenaiFill } from "react-icons/ri";
-import { DiPostgresql } from "react-icons/di";
-import { FaStripeS } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
+import Dobby from "./showcase/dobby";
+import Frcs from "./showcase/frcs";
+import Whisperwell from "./showcase/whisperwell";
+import Portfolio from "./showcase/portfolio-showcase";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const Showcase = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [showComponents, setShowComponents] = useState(false);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -42,161 +27,42 @@ const Showcase = () => {
 
   return (
     <div className="my-16 m-8 lg:mx-40 lg:mt-40 ">
-      <div className="flex flex-col text-gray-300 font-semibold text-3xl lg:text-4xl">
+      <div className="flex flex-col mb-16 text-gray-300 font-semibold text-3xl lg:text-4xl">
         <span>I build applications.</span>
         <span style={{ opacity: opacity, transition: "opacity 1s" }}>
           Take a closer look.
         </span>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-start my-16 space-y-8 md:space-x-8 text-gray-300">
-        <Carousel className="max-w-xs dark mx-16">
-          <CarouselContent>
-            {Array.from({ length: 2 }, (_, i) => i + 1).map((index) => (
-              <CarouselItem key={index}>
-                <div className="p-1">
-                  <Card className="">
-                    <img src={`/portfolio/dobby_${index}.png`} alt="Mockup" />
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-        <div className="flex-col items-center justify-center space-y-8">
-          <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-            Alpha's Dobby 2.0
-          </h1>
-          <p className="text-gray-300 font-medium text-l text-justify">
-            Dobby 2.0 is a Telegram Bot designed to automate and streamline
-            company processes. Prior to the implementation of Dobby, the company
-            relied on manual database updates, a process that was not only
-            time-consuming but also susceptible to errors. Dobby 2.0's primary
-            function is to automatically update the database whenever personnel
-            check in or out, significantly reducing the time spent on these
-            tasks and minimizing the potential for errors. In addition to this,
-            Dobby 2.0 introduces new features, including an efficient leaves
-            management system.
-          </p>
-          <div className="flex flex-wrap justify-start">
-            <Tag
-              icon={<IoLogoJavascript />}
-              tagName="Javascript"
-              popover={"Language of choice: Javascript."}
-            />
-            <Tag
-              icon={<FaNode />}
-              tagName="Node.js"
-              popover={
-                "Node.js was used to allow Javascript to run server side. This allowed the bot to interact with the database and other services."
-              }
-            />
-            <Tag
-              icon={<DiHeroku />}
-              tagName="Heroku"
-              popover={"Heroku was used to host the bot."}
-            />
-            <Tag
-              icon={<DiPostgresql />}
-              tagName="PostgreSQL"
-              popover={
-                "Database of choice: PostgreSQL. A relational database as stored data would be structured."
-              }
-            />
-            <Tag
-              icon={<FaTelegramPlane />}
-              tagName="Telegram API"
-              popover={
-                "The Telegram API allowed the bot to interact with the Telegram system."
-              }
-            />
-          </div>
-        </div>
+      <Whisperwell />
+      <Frcs />
+      <div
+        className={`transition-all duration-200 ease-in-out overflow-hidden origin-top ${
+          showComponents
+            ? "opacity-100 scale-y-100 max-h-full"
+            : "opacity-0 scale-y-0 max-h-0"
+        }`}
+      >
+        <Portfolio />
+        <Dobby />
       </div>
-      <div className="flex flex-col xl:flex-row items-center justify-start my-16 space-y-8 md:space-x-24 text-gray-300">
-        <div className="flex-col items-center justify-center space-y-8">
-          <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-            FRCS Exam Preparation Platform
-          </h1>
-          <p className="text-gray-300 font-medium text-l text-justify min-w-60">
-            The FRCS Exam Preparation Platform is a comprehensive, full-stack
-            web application designed to assist students in their preparation for
-            the Fellowship of the Royal College of Surgeons (FRCS) examination.
-            This innovative platform offers a unique opportunity for students to
-            engage in mock tests, crafted based on real-world scenarios and
-            model answers provided by industry professionals. Leveraging the
-            power of the OpenAi API, the platform delivers insightful feedback
-            on students' performance, enabling them to pinpoint and focus on
-            areas needing improvement. The platform includes a robust
-            authentication system and features a subscription model, integrated
-            with the Stripe API.
-          </p>
-          <div className="flex flex-wrap justify-start">
-            <Tag
-              icon={<SiTypescript />}
-              tagName="Typescript"
-              popover={"Language of choice: Typescript."}
-            />
-            <Tag
-              icon={<RiNextjsFill />}
-              tagName="Next.js"
-              popover={
-                "Next.js 14 framework was used to allow Server-Side rendering of React Components. This enabled the application to dynamically generate pages from the database."
-              }
-            />
-            <Tag
-              icon={<FaAws />}
-              tagName="AWS"
-              popover={
-                "Amazon Web Services (AWS) was used to host the application."
-              }
-            />
-            <Tag
-              icon={<DiPostgresql />}
-              tagName="PostgreSQL"
-              popover={
-                "Database of choice: PostgreSQL. A relational database as stored data would be structured."
-              }
-            />
-            <Tag
-              icon={<SiTailwindcss />}
-              tagName="Tailwind CSS"
-              popover={
-                "Tailwind CSS was used for styling the application due to its utility-first approach. This leads to less CSS bloat and a more maintainable codebase."
-              }
-            />
-            <Tag
-              icon={<RiOpenaiFill />}
-              tagName="OpenAi API"
-              popover={
-                "OpenAi's chat completions API was used to generate feedback for the user based on their answer. This feedback is then streamed to the user through an API endpoint."
-              }
-            />
-            <Tag
-              icon={<FaStripeS />}
-              tagName="Stripe API"
-              popover={
-                "Stripe's API was used to provide a subscription service for users to use the web application. This allows for secure payment processing."
-              }
-            />
-          </div>
-        </div>
-        <Carousel className="max-w-md sm:max-w-xl dark mx-8">
-          <CarouselContent>
-            {Array.from({ length: 3 }, (_, i) => i + 1).map((index) => (
-              <CarouselItem key={index}>
-                <div className="p-1">
-                  <Card className="">
-                    <img src={`/portfolio/frcs_${index}.png`} alt="Mockup" />
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+      <div className="flex justify-center items-center">
+        {!showComponents ? (
+          <button
+            className="flex items-center justify-center text-gray-400 hover:text-white text-l border border-gray-400 hover:border-white space-x-2 px-8 py-2 rounded-xl m-1 transition-colors duration-200"
+            onClick={() => setShowComponents(true)}
+          >
+            <span>View More</span> <FaChevronDown />
+          </button>
+        ) : (
+          <button
+            className="flex items-center justify-center text-gray-400 hover:text-white text-l border border-gray-400 hover:border-white space-x-2 px-8 py-2 rounded-xl m-1 transition-colors duration-200"
+            onClick={() => {
+              setShowComponents(false);
+            }}
+          >
+            <span>Hide</span> <FaChevronUp />
+          </button>
+        )}
       </div>
     </div>
   );

@@ -13,18 +13,18 @@ import { GoLinkExternal } from "react-icons/go";
 
 const Contact = () => {
   return (
-    <div className="h-[25vh] mx-8 lg:mx-20 text-gray-300 flex flex-col items-center">
-      <span className="font-semibold text-3xl lg:text-4xl">
+    <div className="my-16 sm:my-32 lg:mx-20 text-gray-300 flex flex-col space-y-10 justify-center items-center">
+      <span className="font-semibold text-3xl lg:text-4xl text-center">
         Impressed? Get in touch.
       </span>
-      <div className="flex items-center justify-center flex-grow">
+      <div className="flex items-center justify-center mt-24px">
         <div className="border-gray-500 rounded-md border p-4 px-8 space-x-8 flex">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
                 <span>
                   <a
-                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=bryanlim0803020@gmail.com&tf=1"
+                    href="mailto:bryanlim0803020@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
