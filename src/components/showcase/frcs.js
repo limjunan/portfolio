@@ -17,6 +17,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { RiOpenaiFill } from "react-icons/ri";
 import { FaStripeS } from "react-icons/fa";
 import { Skeleton } from "../ui/skeleton";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const Frcs = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -26,9 +27,15 @@ const Frcs = () => {
       <div className="flex-col items-center md:w-1/2">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-              FRCS Exam Preparation Platform
-            </h1>
+            <div className="flex flex-row items-center space-x-4">
+              <Avatar>
+                <AvatarImage src="/portfolio/frcs_avatar.png" alt="FRCS" />
+                <AvatarFallback>F</AvatarFallback>
+              </Avatar>
+              <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
+                FRCS Exam Preparation Platform
+              </h1>
+            </div>
             <p className="text-gray-300 font-medium text-l text-justify">
               The FRCS Exam Preparation Platform is a comprehensive, full-stack
               web application designed to assist students in their preparation
