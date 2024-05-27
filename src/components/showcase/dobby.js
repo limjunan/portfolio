@@ -16,6 +16,7 @@ import { DiHeroku } from "react-icons/di";
 import { FaTelegramPlane } from "react-icons/fa";
 import { DiPostgresql } from "react-icons/di";
 import { FaNode } from "react-icons/fa";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const Dobby = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -25,9 +26,18 @@ const Dobby = () => {
       <div className="flex-col items-center md:w-3/4">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-              Alpha's Dobby 2.0
-            </h1>
+            <div className="flex flex-row items-center space-x-4">
+              <Avatar>
+                <AvatarImage
+                  src="/portfolio/dobby_avatar.jpg"
+                  alt="Alpha's Dobby"
+                />
+                <AvatarFallback>WW</AvatarFallback>
+              </Avatar>
+              <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
+                Alpha's Dobby 2.0
+              </h1>
+            </div>
             <p className="text-gray-300 font-medium text-l text-justify">
               Dobby 2.0 is a Telegram Bot designed to automate and streamline
               company processes. Prior to the implementation of Dobby, the

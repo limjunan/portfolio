@@ -16,6 +16,7 @@ import { FaFigma } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
 import { Skeleton } from "../ui/skeleton";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const Portfolio = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -54,9 +55,15 @@ const Portfolio = () => {
       <div className="flex-col items-center md:w-1/2">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-              Portfolio React App
-            </h1>
+            <div className="flex flex-row space-x-4 items-center">
+              <Avatar className="dark">
+                <AvatarImage src="/portfolio/pikachu.png" alt="Portfolio" />
+                <AvatarFallback>P</AvatarFallback>
+              </Avatar>
+              <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
+                Portfolio React App
+              </h1>
+            </div>
             <p className="text-gray-300 font-medium text-l text-justify">
               This portfolio website is a digital platform that showcases my
               skills, projects, and about myself as a developer. Designed with a

@@ -16,6 +16,7 @@ import { FaNode } from "react-icons/fa";
 import { DiPostgresql } from "react-icons/di";
 import { DiRedis } from "react-icons/di";
 import { Skeleton } from "../ui/skeleton";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const Whisperwell = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -52,9 +53,18 @@ const Whisperwell = () => {
       <div className="flex-col items-center md:w-3/4">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
-              Whisper Well
-            </h1>
+            <div className="flex flex-row items-center space-x-4">
+              <Avatar>
+                <AvatarImage
+                  src="/portfolio/whisper_well_avatar.jpg"
+                  alt="Whisper Well"
+                />
+                <AvatarFallback>WW</AvatarFallback>
+              </Avatar>
+              <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
+                Whisper Well
+              </h1>
+            </div>
             <p className="text-gray-300 font-medium text-l text-justify">
               Whisper Well is a specialised Telegram Bot (
               <a

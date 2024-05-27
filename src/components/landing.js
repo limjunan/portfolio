@@ -31,16 +31,17 @@ const Landing = () => {
         <div className="text-gray-100 m-8 lg:w-2/5 text-4xl lg:text-5xl lg:ml-20 transition-all duration-500 font-semibold">
           Hi, I'm Bryan Lim. <br />A software engineer.
         </div>
-        {!imageLoaded && (
-          <Skeleton className="h-[300px] w-[300px] lg:h-[600px] lg:w-[600px] rounded-full dark" />
+        {imageLoaded ? (
+          <img
+            src="/portfolio/moon-smooth.png"
+            alt="Moon"
+            className="w-2/3 h-2/3 md:w-1/2 md:h-1/2 object-contain object-center"
+            style={{ opacity: imageLoaded ? opacity : 0 }}
+            onLoad={() => setImageLoaded(true)}
+          />
+        ) : (
+          <Skeleton className="h-[300px] w-[300px] lg:h-[700px] lg:w-[700px] rounded-full dark" />
         )}
-        <img
-          src="/portfolio/moon-smooth.png"
-          alt="Moon"
-          className="w-2/3 h-2/3 md:w-1/2 md:h-1/2 object-contain object-center"
-          style={{ opacity: imageLoaded ? opacity : 0 }}
-          onLoad={() => setImageLoaded(true)}
-        />
       </div>
     </div>
   );
