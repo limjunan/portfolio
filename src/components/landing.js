@@ -5,6 +5,11 @@ const Landing = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
 
+  useEffect(() => {
+    const img = new Image();
+    img.src = "/portfolio/moon-smooth.png";
+    img.onload = () => setImageLoaded(true);
+  }, []);
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -33,10 +38,10 @@ const Landing = () => {
         </div>
         {imageLoaded ? (
           <img
-            src="/portfolio/moon-smooth.png"
+            src={"/portfolio/moon-smooth.png"}
             alt="Moon"
             className="w-2/3 h-2/3 md:w-1/2 md:h-1/2 object-contain object-center"
-            style={{ opacity: imageLoaded ? opacity : 0 }}
+            style={{ opacity: opacity }}
             onLoad={() => setImageLoaded(true)}
           />
         ) : (
