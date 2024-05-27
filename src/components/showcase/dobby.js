@@ -23,7 +23,7 @@ const Dobby = () => {
 
   return (
     <div className="flex flex-col-reverse md:flex-row justify-center items-center mx-4 mb-16 space-y-reverse space-y-8 md:space-x-16 text-gray-300">
-      <div className="flex-col items-center md:w-3/4">
+      <div className="flex-col items-center md:w-1/2">
         <div className="space-y-8">
           <div className="space-y-4">
             <div className="flex flex-row items-center space-x-4">
@@ -85,7 +85,7 @@ const Dobby = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:w-1/4">
+      <div className="flex justify-center items-center md:w-1/2">
         <Carousel className="dark mx-8">
           <CarouselContent>
             {Array.from({ length: 2 }, (_, i) => i + 1).map((index) => (
