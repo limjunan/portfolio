@@ -17,6 +17,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
 import { Skeleton } from "../ui/skeleton";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Popover, PopoverTrigger, PopoverContent } from "../ui/popover";
 
 const Portfolio = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -57,7 +58,7 @@ const Portfolio = () => {
           <div className="space-y-4">
             <div className="flex flex-row space-x-4 items-center">
               <Avatar className="dark">
-                <AvatarImage src="/portfolio/pikachu.png" alt="Portfolio" />
+                <AvatarImage src="/portfolio/favicon.ico" alt="Portfolio" />
                 <AvatarFallback>P</AvatarFallback>
               </Avatar>
               <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
@@ -115,13 +116,29 @@ const Portfolio = () => {
                 "Tailwind CSS was used for styling the application due to its utility-first approach. This leads to less CSS bloat and a more maintainable codebase."
               }
             />
-            <Tag
-              icon={<SiShadcnui />}
-              tagName="shadcn/ui"
-              popover={
-                "shadcn/ui is an open source component library that was used in the UI of the application."
-              }
-            />
+            <Popover>
+              <PopoverTrigger>
+                <div className="flex items-center justify-center text-gray-400 hover:text-white text-s border border-gray-400 hover:border-white space-x-2 px-4 rounded-full m-1 transition-colors duration-200">
+                  <span>
+                    <SiShadcnui />
+                  </span>{" "}
+                  <span>shadcn/ui</span>
+                </div>
+                <PopoverContent className="dark font-medium">
+                  <div>
+                    <a
+                      href="https://ui.shadcn.com/"
+                      target="blank"
+                      className="underline"
+                    >
+                      shadcn/ui
+                    </a>{" "}
+                    is an open source component library that was used in the UI
+                    of the application.
+                  </div>
+                </PopoverContent>
+              </PopoverTrigger>
+            </Popover>
           </div>
         </div>
       </div>

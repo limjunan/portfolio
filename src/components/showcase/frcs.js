@@ -29,7 +29,7 @@ const Frcs = () => {
           <div className="space-y-4">
             <div className="flex flex-row items-center space-x-4">
               <Avatar>
-                <AvatarImage src="/portfolio/frcs_avatar.png" alt="FRCS" />
+                <AvatarImage src="/portfolio/frcs.png" alt="FRCS" />
                 <AvatarFallback>F</AvatarFallback>
               </Avatar>
               <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-4xl">
@@ -39,8 +39,16 @@ const Frcs = () => {
             <p className="text-gray-300 font-medium text-l text-justify">
               The FRCS Exam Preparation Platform is a comprehensive, full-stack
               web application designed to assist students in their preparation
-              for the Fellowship of the Royal College of Surgeons (FRCS)
-              examination. <br />
+              for the{" "}
+              <a
+                className="underline"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.rcseng.ac.uk/education-and-exams/exams/search/international-fellowship-examination-jscfe/"
+              >
+                Fellowship of the Royal College of Surgeons (FRCS) examination
+              </a>
+              . <br />
               <br />
               This platform offers a unique opportunity for students to engage
               in mock tests, crafted based on real-world scenarios and model
@@ -70,7 +78,7 @@ const Frcs = () => {
               icon={<FaAws />}
               tagName="AWS"
               popover={
-                "Amazon Web Services (AWS) was used to host the application."
+                "Amazon Web Services (AWS) was used to host the application. S3 was used to store images and RDS was used to store the database."
               }
             />
             <Tag
