@@ -74,7 +74,7 @@ const Portfolio = () => {
                 href="https://www.cloudflare.com/en-gb/learning/performance/what-is-lazy-loading/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
+                className="underline decoration-dotted text-white"
               >
                 lazy loading
               </a>

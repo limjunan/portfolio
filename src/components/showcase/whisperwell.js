@@ -69,7 +69,7 @@ const Whisperwell = () => {
               Whisper Well is a specialised Telegram Bot (
               <a
                 href="https://t.me/Whisperwell_bot"
-                className="underline"
+                className="text-white underline decoration-dotted"
                 target="_blank"
                 rel="noreferrer"
               >

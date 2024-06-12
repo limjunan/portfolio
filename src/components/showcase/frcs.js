@@ -42,7 +42,7 @@ const Frcs = () => {
               web application designed to assist students in their preparation
               for the{" "}
               <a
-                className="underline"
+                className="underline decoration-dotted text-white"
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.rcseng.ac.uk/education-and-exams/exams/search/international-fellowship-examination-jscfe/"
