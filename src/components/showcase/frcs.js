@@ -99,7 +99,7 @@ const Frcs = () => {
               icon={<RiOpenaiFill />}
               tagName="OpenAi API"
               popover={
-                "OpenAi's chat completions API was used to generate feedback for the student based on their answer. This feedback is then streamed to the student through an API endpoint."
+                "OpenAi's Chat Completions API was used to generate feedback for the student based on their answer. OpenAi's Whisper API was also implemented to enable speech in the application."
               }
             />
             <Tag

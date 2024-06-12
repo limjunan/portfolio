@@ -67,9 +67,10 @@ const Portfolio = () => {
             </div>
             <p className="text-gray-300 font-medium text-l">
               This portfolio website is a digital platform that showcases my
-              skills, projects, and about myself as a developer. Designed with a
-              focus on user experience, it ensures fast load speeds through
-              efficient techniques such as{" "}
+              skills, projects, and about myself as a developer. It also gives
+              me a playground to test my front-end skills. Designed with a focus
+              on user experience, it ensures fast load speeds through efficient
+              techniques such as{" "}
               <a
                 href="https://www.cloudflare.com/en-gb/learning/performance/what-is-lazy-loading/"
                 target="_blank"
