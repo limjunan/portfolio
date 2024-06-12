@@ -100,7 +100,7 @@
 
 @layer utilities {
   .card-wrapper {
-    @apply relative bg-gradient-to-b from-slate-700 to-slate-800 overflow-hidden;
+    @apply relative bg-gradient-to-b from-gray-500 to-gray-600 overflow-hidden;
   }
   .card-wrapper::before {
     background: conic-gradient(
