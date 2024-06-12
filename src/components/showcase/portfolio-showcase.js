@@ -65,7 +65,7 @@ const Portfolio = () => {
                 Portfolio React App
               </h1>
             </div>
-            <p className="text-gray-300 font-medium text-l text-justify">
+            <p className="text-gray-300 font-medium text-l">
               This portfolio website is a digital platform that showcases my
               skills, projects, and about myself as a developer. Designed with a
               focus on user experience, it ensures fast load speeds through

@@ -40,7 +40,7 @@ const About = () => {
       <span className="text-4xl text-white lg:text-5xl border-b border-gray-500 pb-4">
         About the developer behind the screen.
       </span>
-      <div className="flex items-center justify-center text-gray-400 text-xl pt-8">
+      <div className="flex items-center justify-center text-gray-400 text-m md:text-xl pt-8">
         <p>
           I am a student software engineer based in{" "}
           <span className="text-white">Singapore</span> and I have a passion for

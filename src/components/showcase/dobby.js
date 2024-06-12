@@ -38,7 +38,7 @@ const Dobby = () => {
                 Alpha's Dobby 2.0
               </h1>
             </div>
-            <p className="text-gray-300 font-medium text-l text-justify">
+            <p className="text-gray-300 font-medium text-l">
               Dobby 2.0 is a Telegram Bot designed to automate and streamline
               company processes. Prior to the implementation of Dobby, the
               company relied on manual database updates, a process that was not

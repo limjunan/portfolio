@@ -16,6 +16,7 @@ import { DiPostgresql } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { RiOpenaiFill } from "react-icons/ri";
 import { FaStripeS } from "react-icons/fa";
+import { SiNextdns } from "react-icons/si";
 import { Skeleton } from "../ui/skeleton";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
@@ -36,7 +37,7 @@ const Frcs = () => {
                 FRCS Exam Preparation Platform
               </h1>
             </div>
-            <p className="text-gray-300 font-medium text-l text-justify">
+            <p className="text-gray-300 font-medium text-l">
               The FRCS Exam Preparation Platform is a comprehensive, full-stack
               web application designed to assist students in their preparation
               for the{" "}
@@ -50,11 +51,10 @@ const Frcs = () => {
               </a>
               . <br />
               <br />
-              This platform offers a unique opportunity for students to engage
-              in mock tests, crafted based on real-world scenarios and model
-              answers provided by industry professionals. Leveraging the OpenAi
+              This platform offers an opportunity for students to engage in mock
+              tests, crafted by industry professionals. Leveraging the OpenAi
               API, the platform delivers feedback on students' performance,
-              enabling them to pinpoint on areas needing improvement. <br />
+              enabling them to pinpoint on areas of improvement. <br />
               <br /> The platform includes an authentication system and features
               a subscription model, integrated with the Stripe API. It also
               comes complete with an admin dashboard, allowing for the
@@ -107,6 +107,13 @@ const Frcs = () => {
               tagName="Stripe API"
               popover={
                 "Stripe's API was used to provide a subscription service for students to use the platform. This allows for secure payment processing."
+              }
+            />
+            <Tag
+              icon={<SiNextdns />}
+              tagName="NextAuth.js"
+              popover={
+                "NextAuth was used to provide authentication for the application. This allowed users to sign in and access the platform securely."
               }
             />
           </div>

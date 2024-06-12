@@ -65,7 +65,7 @@ const Whisperwell = () => {
                 Whisper Well
               </h1>
             </div>
-            <p className="text-gray-300 font-medium text-l text-justify">
+            <p className="text-gray-300 font-medium text-l">
               Whisper Well is a specialised Telegram Bot (
               <a
                 href="https://t.me/Whisperwell_bot"
